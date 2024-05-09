@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Border Example</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+        .container{
+            height: 80vh;
+            width: 80vw;
+            margin: 0 auto;
+            background-color:rgb(190, 184, 184) ;
+            background: transparent;
+            
+        }
+        .container p{
+            opacity: .5;
+
+        }
+      .border-with-image {
+        border: 10px solid transparent; /* Set border width and style */
+        border-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/681/383/small/yellow-sunflower-tropical-beautiful-bouquet-with-exotic-green-leaf-on-land-nature-photo.jpg") 30 round; /* Specify the background image and border style */
+        padding: 25px; /* Adjust padding to prevent content from overlapping the border */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border-with-image">
+      <p>This is a content with border created using background image.</p>
+    </div>
+  </body>
+</html>

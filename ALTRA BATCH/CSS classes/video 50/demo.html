@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Filters</title>
+    <style>
+        
+        .img1
+        {
+            filter: brightness(150%) contrast(200%) ;
+
+        }
+        .img2{
+            filter: saturate(200%);
+        }
+        .img3{
+            /* filter: invert(.7); */
+            /* opacity: .3; */
+            filter: grayscale(50%) sepia(100%) ;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img class="img1" src="https://burst.shopifycdn.com/photos/finger-pointing-at-javascript-code.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="">
+        <img class="img2" src="https://media.cnn.com/api/v1/images/stellar/prod/201203222111-03-virat-kohli-paternity-leave-india-dst-intl-hnk.jpg?q=w_1110,c_fill" alt="">
+        <img class="img3" src="https://www.livemint.com/lm-img/img/2023/05/28/1600x900/Akshaykumar_1685299899631_1685299911296.jpg" alt="">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width:400px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            margin: 0 auto;
+
+            background-image: url("https://e0.pxfuel.com/wallpapers/692/714/desktop-wallpaper-beautiful-nature-latest-beauty-nature.jpg");
+            background-position: top right;
+            background-position: center right;
+            background-repeat: no-repeat;
+            /* background-clip:padding-box; */
+
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit:cover;
+            object-position: 10px 20px;
+            /* object-position: bottom right; */
+        }
+        #borderdiv{
+            border: 2px solid green;
+        }
+        .main{
+            height: 400px;
+            width: 500px;
+            border: 2px solid rgb(247, 22, 5);
+        }
+        .border-with-image {
+    border: 10px solid transparent; /* Set border width and style */
+    border-image: url('https://img.lovepik.com/photo/48013/0603.jpg_wh860.jpg') 30 round; /* Specify the background image and border style */
+    padding: 15px; /* Adjust padding to prevent content from overlapping the border */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container ">
+        
+    </div>
+    
+    <div id="borderdiv" class="main border-with-image"></div>
+
+</body>
+</html>

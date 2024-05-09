@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* universal  selectors */
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        /* pseudo selectors */
+        a:visited
+        {
+            color: rgb(111, 255, 0);
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: greenyellow;
+        }
+        /* Id and Class selectors */
+        .red{
+            background-color: red;
+            color:yellow;
+        }
+        #green{
+            background-color: greenyellow;
+        }
+        /* dependent selectors */
+        div > article > p {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">i am keshav </div>
+    <div id="green">i am keshav </div>
+
+    <!-- child Selectors -->
+
+    <div>
+        <h3>Hello</h3>
+        <article>
+            <p>welcome</p>
+        </article>
+    </div>
+
+    <div>
+        <a href="https://www.google.com">Go to Google </a>
+    </div>
+
+</body>
+</html>

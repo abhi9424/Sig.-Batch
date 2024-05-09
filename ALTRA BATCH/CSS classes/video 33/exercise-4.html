@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise - 4</title>
+    <style>
+        :root{
+            --pricolor:rgb(139, 139, 233);
+            --secolor:rgb(57, 57, 245);
+            --bcolor:rgb(250, 229, 229); 
+        }
+        :root{
+            --pricolor:rgb(184, 178, 144);
+            --secolor:rgb(248, 208, 32);
+            --bcolor:rgb(236, 39, 39); 
+        }
+        /* :root{
+            --pricolor:rgb(159, 192, 133);
+            --secolor:rgb(137, 231, 15);
+            --bcolor:rgb(0, 38, 255); 
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: var(--pricolor);
+
+        }
+        .nav
+        {
+            height: 80px;
+            width: 100%;
+            background-color: var(--secolor);
+            
+            border:2px solid var(--bcolor);
+            display: flex;
+            
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            /* color: white; */
+            margin: 10px 15px;
+            
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--bcolor);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><a target="_blank" href="/">Home</a></li>
+                <li><a target="_blank" href="/">About </a></li>
+                <li><a target="_blank" href="/">Service</a></li>
+                <li><a target="_blank" href="/">Contect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+</body>
+</html>

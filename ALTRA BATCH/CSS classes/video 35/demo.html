@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: orange;
+        } */
+/* 
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        
+        /* attribute selectors */
+        /* [datacolor="primary"]{
+            padding-top:45px ;
+        } */
+/* 
+        .box:nth-child(even){
+            background-color: red;
+        } */
+/* 
+        .box:nth-last-child(2){
+            background-color: red;
+        } */
+
+        .boxes::before{
+            content: "i am a good boy";
+            color: blue;
+        }
+
+        .boxes::after{
+            content: "This Is Sigma Course";
+            color: red;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            /* background-color: purple; */
+            font-style: italic;
+            text-transform:uppercase;
+            font-size: 23px;
+            color: orange;
+
+        }
+
+        input::placeholder{
+            color: rgb(190, 9, 245);
+            text-transform: capitalize;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="boxes">
+        <div datacolor = "primary" class="box">Hay i am a box lorem</div>
+        <div class="box">Hay i am a box</div>
+        <div class="box">Hay i am a box</div>
+        <div class="box">Hay i am a box</div>
+        <input type="text" placeholder="enter your name ">
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Bullet Points Example</title>
+<style>
+  ul.custom-bullets {
+    list-style: none;
+  }
+  ul.custom-bullets li::before {
+    content: "\2022"; /* Unicode for bullet point */
+    color: red;
+    margin-right: 5px;
+  }
+  a.custom-link {
+    position: relative;
+    text-decoration: none;
+    color: blue;
+    /* text-indent: 25px; */
+  }
+  a.custom-link::before {
+    content: "\2190"; /* Unicode for left arrow */
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  a.custom-link:hover::before {
+    opacity: 1;
+  }
+
+
+
+  .quote {
+    font-style: italic;
+    position: relative;
+  }
+  .quote:hover::before, .quote:hover::after {
+    content: '"';
+    position: absolute;
+    color: gray;
+  }
+  .quote::before {
+    top: -10px;
+    left: -10px;
+  }
+  .quote::after {
+    top: -10px;
+    /* right: 10px; */
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .tooltip::before {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+  }
+  .tooltip:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
+
+</style>
+</head>
+<body>
+
+<ul class="custom-bullets">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<a href="#" class="custom-link">Go back</a>
+
+<hr>
+<div class="quote">
+    This is a quoted text.
+  </div>
+<hr>
+
+
+<div class="tooltip" title="Tooltip Text">
+    Hover over me
+  </div>
+
+
+</body>
+</html>

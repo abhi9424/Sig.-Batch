@@ -1,0 +1,100 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin: 0 5px 0 0;
+}
+.card{
+    height: 80vh;
+    width: 50vw;
+    border: 2px solid rgb(163, 160, 160);
+    margin: 10vh auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 1px;
+
+}
+
+.image img
+{
+    border-radius: 10px;
+    padding: 5px;
+    height: 40vh;
+    width: 50vw;
+    
+}
+
+.container span{
+    margin: 20px;
+    font-weight: bold;
+    /* text-decoration-style: 2px solid red; */
+
+}
+.container h2{
+    margin: 2vh 0 0 2vh ;
+    font-size: 2rem;
+}
+.container p{
+    margin: 1vh ;
+    font-family: sans-serif;
+    font-size: 3vh;
+    /* font-size: larger; */
+}
+.button{
+    margin:20px auto;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.button button{
+    height: 5vh;
+    width: 17vw;
+    border: 2px solid rgb(180, 196, 195);
+    border-radius: 10px ;
+    color: rgb(4, 106, 173);
+    background-color: rgb(189, 235, 235);
+    outline: none;
+    padding: 2px 5px 2px 5px ;
+    
+
+}
+
+@media screen and (min-width : 1000px  ) {
+    
+    .card{
+        height: 80vh;
+        width: 35vw;
+        border: 2px solid rgb(163, 160, 160);
+        margin: 10vh auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px 1px;
+
+    }
+    
+    .image img
+    {
+        border-radius: 10px;
+        padding: 5px;
+        height: 38vh;
+        width: 35vw;
+        
+    }
+    .container p{
+        margin: 1vh ;
+        font-family: sans-serif;
+        font-size: 2.5vh;
+        /* font-size: larger; */
+    }
+    .button{
+        margin:15px auto;
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
